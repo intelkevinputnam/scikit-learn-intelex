@@ -136,6 +136,9 @@ html_theme_options = {
     "titles_only": False,
 }
 
+html_context = {
+    "current_version":version
+}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -145,6 +148,7 @@ html_static_path = ["_static"]
 
 def setup(app):
     app.add_css_file("custom.css")
+    app.add_js_file("version_switcher.js")
 
 
 # -- Options for HTMLHelp output ---------------------------------------------
