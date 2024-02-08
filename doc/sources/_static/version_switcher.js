@@ -11,6 +11,9 @@ function load_versions(json){
         var o = document.createElement('option');
         o.innerHTML = version[0];
         o.value = version[1];
+        if (current_version == version[0]){
+            o.selected = true;
+        }
         s.append(o);
     }
     button.addEventListener("click", (event)=> {
