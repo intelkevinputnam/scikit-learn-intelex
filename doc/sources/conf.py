@@ -44,7 +44,7 @@ author = "Intel"
 # The short X.Y version
 version = "2024.1"
 # The full version, including alpha/beta/rc tags
-release = "2024.1"
+release = version
 
 
 # -- General configuration ---------------------------------------------------
