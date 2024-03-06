@@ -29,6 +29,7 @@ jobs:
         cp versions.json ../..
         cd ../
         git fetch
+        git checkout -- doc/build-doc.sh
         git checkout latesthtml
         mv ../$DOC_VERSION .
         mv ../versions.json .
