@@ -33,4 +33,4 @@ jobs:
         git checkout latesthtml
         mv ../$DOC_VERSION .
         mv ../versions.json .
-        ls
+        ls -al
