@@ -26,7 +26,9 @@ jobs:
         ./build-doc.sh
         sphinx-build -b html -D version=$DOC_VERSION sources _build/html
         mv _build/html ../../$DOC_VERSION
+        cp versions.json ../..
         cd ../
         git checkout latesthtml
         mv ../$DOC_VERSION .
+        mv ../versions.json .
         ls
