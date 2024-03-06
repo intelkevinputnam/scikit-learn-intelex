@@ -25,6 +25,6 @@ jobs:
         chmod +x build-doc.sh
         ./build-doc.sh
         sphinx-build -b html -D version=$DOC_VERSION sources _build/html
-        mv _build/html ../$DOC_VERSION
-        cd ..
+        mv _build/html ../../$DOC_VERSION
+        cd ../..
         ls
