@@ -37,5 +37,5 @@ jobs:
         mv -f ../$DOC_VERSION .
         mv ../versions.json .
         rm -rf doc
-        git push -f https://${GITHUB_ACTOR}:${{GITHUB_TOKEN}}@github.com/${GITHUB_REPOSITORY}.git HEAD:latesthtml
+        git push -f https://${GITHUB_ACTOR}:${{secrets.GITHUB_TOKEN}}@github.com/${GITHUB_REPOSITORY}.git HEAD:latesthtml
 
