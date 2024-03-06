@@ -1,0 +1,11 @@
+[
+    {
+        "name": "2024.1 (latest)",
+        "version": "2024.1",
+        "url": "http://localhost:8000/2024.1/"
+    },
+    {
+        "version": "2023.2",
+        "url": "http://localhost:8000/2023.2/"
+    }
+]
