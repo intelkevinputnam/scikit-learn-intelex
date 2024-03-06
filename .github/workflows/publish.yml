@@ -28,11 +28,12 @@ jobs:
         mv _build/html ../../$DOC_VERSION
         rm -rf _build
         cp versions.json ../..
+    - name: deploy docs
+      run: |
         cd ../
         git fetch
         git checkout -- doc/build-doc.sh
         git checkout latesthtml
         mv ../$DOC_VERSION .
         mv ../versions.json .
-        cd doc
-        ls -al
+        rm -rf doc
