@@ -29,9 +29,9 @@ jobs:
         rm -rf _build
         cp versions.json ../..
         cd ../
-        git status
         git fetch
         git checkout -- doc/build-doc.sh
+        git status
         git checkout latesthtml
         ls -al
         mv ../$DOC_VERSION .
