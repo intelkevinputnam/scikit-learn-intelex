@@ -22,5 +22,6 @@ jobs:
       run: |
         source doc/set_version.sh
         cd doc
+        chmod +x build-doc.sh
         ./build-doc.sh
         sphinx-build -b html -D version=$DOC_VERSION sources _build/html
