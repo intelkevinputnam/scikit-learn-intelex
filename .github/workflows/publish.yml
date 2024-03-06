@@ -37,6 +37,8 @@ jobs:
         mv -f ../$DOC_VERSION .
         mv ../versions.json .
         rm -rf doc
+        git config --global user.name "${GITHUB_ACTOR}"
+        git config --global user.email "${GITHUB_ACTOR}@github.com"
         git add .
         git commit -m "latest HTML output"
         git push -f https://${GITHUB_ACTOR}:${{secrets.GITHUB_TOKEN}}@github.com/${GITHUB_REPOSITORY}.git HEAD:latesthtml
