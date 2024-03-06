@@ -1,4 +1,6 @@
+setuptools>=65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
 sphinx==6.2.1
+sphinx-rtd-theme
 nbsphinx
-sphinx_tabs.tabs
-notfound.extension
+sphinx-tabs
+notfound
