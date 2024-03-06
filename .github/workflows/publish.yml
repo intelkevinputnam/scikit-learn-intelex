@@ -14,7 +14,7 @@ jobs:
     - name: install dependencies
       run: |
         sudo apt update
-        sudo apt install -y pandoc
+        sudo apt install -y pandoc git
         pip3 install -r doc/requirements.txt
         source doc/set_version.sh
         echo Generating version $DOC_VERSION
@@ -25,3 +25,6 @@ jobs:
         chmod +x build-doc.sh
         ./build-doc.sh
         sphinx-build -b html -D version=$DOC_VERSION sources _build/html
+        mv _build/html ../$DOC_VERSION
+        cd ..
+        ls
