@@ -30,6 +30,7 @@ jobs:
         cp versions.json ../..
     - name: deploy docs
       run: |
+        source doc/set_version.sh
         git fetch
         git checkout -- doc/build-doc.sh
         git checkout latesthtml
