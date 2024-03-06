@@ -28,6 +28,7 @@ jobs:
         mv _build/html ../../$DOC_VERSION
         cp versions.json ../..
         cd ../
+        git fetch
         git checkout latesthtml
         mv ../$DOC_VERSION .
         mv ../versions.json .
