@@ -1,9 +1,4 @@
 sphinx==6.2.1
-sphinx.ext.todo
-sphinx.ext.coverage
-sphinx.ext.viewcode
-sphinx.ext.githubpages
-sphinx.ext.autodoc
 nbsphinx
 sphinx_tabs.tabs
 notfound.extension
