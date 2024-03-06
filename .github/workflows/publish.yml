@@ -31,9 +31,8 @@ jobs:
         cd ../
         git fetch
         git checkout -- doc/build-doc.sh
-        git status
         git checkout latesthtml
-        ls -al
         mv ../$DOC_VERSION .
         mv ../versions.json .
+        cd doc
         ls -al
