@@ -1,4 +1,4 @@
-fetch("/versions.json").then(response => response.text()).then(respText=>
+fetch("https://intelkevinputnam.github.io/scikit-learn-intelex/versions.json").then(response => response.text()).then(respText=>
     load_versions(respText));
 
 function load_versions(json){
