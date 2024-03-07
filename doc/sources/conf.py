@@ -137,7 +137,8 @@ html_theme_options = {
 }
 
 html_context = {
-    "current_version":version
+    "current_version":version,
+    "project_name":"scikit-learn-intelex"
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
