@@ -1,6 +1,8 @@
 fetch("https://intelkevinputnam.github.io/scikit-learn-intelex/versions.json").then(response => response.text()).then(respText=>
     load_versions(respText));
 
+const project_name = "scikit-learn-intelex"
+
 function load_versions(json){
     var button = document.getElementById('version-switcher-button')
     var container = document.getElementById('version-switcher-dropdown')
@@ -28,7 +30,7 @@ function load_versions(json){
         var current_url = new URL(window.location.href);
         var path = current_url.pathname;
         //strip version from path
-        var page_path = path.substring(current_version.length+2);
+        var page_path = path.substring(project_name.length+current_version.length+3);
         window.location.href = s.value + page_path;
     });
     container.append(s);
