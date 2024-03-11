@@ -32,7 +32,7 @@ jobs:
     - name: deploy docs
       run: |
         cd doc
-        source doc/set_version.sh
+        source set_version.sh
         cd ..
         git fetch
         git checkout -- doc/build-doc.sh
