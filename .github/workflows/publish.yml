@@ -29,6 +29,7 @@ jobs:
         mv _build/html ../../$DOC_VERSION
         rm -rf _build
         cp versions.json ../..
+        cp index.html ../..
     - name: deploy docs
       run: |
         cd doc
