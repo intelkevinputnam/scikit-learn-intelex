@@ -31,6 +31,10 @@
 #
 import os
 import sys
+import json
+
+with open('doc_version.json') as jsonFile:
+    doc_version = json.load(jsonFile)
 
 sys.path.insert(0, os.path.abspath("../"))
 
@@ -42,7 +46,7 @@ copyright = "2023, Intel"
 author = "Intel"
 
 # The short X.Y version
-version = "2024.1"
+version = doc_version["version"]
 # The full version, including alpha/beta/rc tags
 release = version
 
