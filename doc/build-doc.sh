@@ -28,5 +28,5 @@ cd ..
 rsync -a --exclude='doc/$SAMPLES_DIR/daal4py_data_science.ipynb' examples/notebooks/*.ipynb doc/$SAMPLES_DIR
 
 # build the documentation
-cd doc
-make html
+# cd doc
+# make html
