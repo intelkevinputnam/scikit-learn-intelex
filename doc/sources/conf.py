@@ -46,15 +46,9 @@ copyright = "Intel"
 author = "Intel"
 
 # The short X.Y version
-<<<<<<< HEAD
-version = "2025.0.0"
-# The full version, including alpha/beta/rc tags
-release = "2025.0.0"
-=======
 version = doc_version["version"]
 # The full version, including alpha/beta/rc tags
 release = version
->>>>>>> 9b8eee21 (initial commit)
 
 
 # -- General configuration ---------------------------------------------------
