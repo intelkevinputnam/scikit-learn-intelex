@@ -42,7 +42,8 @@ jobs:
         rm -rf $DOC_VERSION
         mv -f ../$DOC_VERSION .
         mv ../versions.json .
-        mv ../index.html .
+        rm index.html
+        echo "<meta http-equiv=\"refresh\" content=\"0; URL='/scikit-learn-intelex/$DOC_VERSION/'\" / >" >> index.html
         rm -rf doc
         git config --global user.name "${GITHUB_ACTOR}"
         git config --global user.email "${GITHUB_ACTOR}@github.com"
