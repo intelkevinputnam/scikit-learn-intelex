@@ -23,6 +23,8 @@
 # full list see the documentation:
 # http://www.sphinx-doc.org/en/master/config
 
+bench_test = False
+
 # -- Path setup --------------------------------------------------------------
 
 import json
@@ -36,12 +38,6 @@ import sys
 
 sys.path.insert(0, os.path.abspath("../"))
 
-script_dir = os.path.dirname(os.path.abspath(__file__))
-doc_version_path = os.path.join(script_dir, "doc_version.json")
-
-with open(doc_version_path) as jsonFile:
-    doc_version = json.load(jsonFile)
-
 # -- Project information -----------------------------------------------------
 
 project = "Intel(R) Extension for Scikit-learn*"
@@ -49,7 +45,7 @@ copyright = "Intel"
 author = "Intel"
 
 # The short X.Y version
-version = doc_version["version"]
+version = os.environ['DOC_VERSION']
 # The full version, including alpha/beta/rc tags
 release = version
 
@@ -161,7 +157,13 @@ html_theme_options = {
     "titles_only": False,
 }
 
-html_context = {"current_version": version, "project_name": "scikit-learn-intelex"}
+switcher_url = "https://intel.github.io/scikit-learn-intelex/versions.json"
+if bench_test:
+    switcher_url = "/versions.json"
+
+html_context = {"current_version": version,
+                "project_name": "scikit-learn-intelex",
+                "switcher_url": switcher_url}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,

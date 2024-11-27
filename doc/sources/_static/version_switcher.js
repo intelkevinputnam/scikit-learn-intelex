@@ -1,7 +1,3 @@
-fetch("https:///intel.github.io/scikit-learn-intelex/versions.json").then(response => response.text()).then(respText=>
-    load_versions(respText));
-
-
 function load_versions(json){
     var button = document.getElementById('version-switcher-button')
     var container = document.getElementById('version-switcher-dropdown')
