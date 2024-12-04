@@ -28,6 +28,13 @@ BUILDDIR      = _build
 help:
 	@$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
+test:
+	python3 get_doc_version.py
+	./build-doc.sh
+	sphinx-build -b html sources _build/scikit-learn-intelex/$(DOC_VERSION)
+	cp versions.json _build/scikit-learn-intelex
+	cp index.html _build/scikit-learn-intelex
+
 .PHONY: help Makefile
 
 # Catch-all target: route all unknown targets to Sphinx using the new

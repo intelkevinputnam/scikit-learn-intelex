@@ -157,7 +157,7 @@ html_theme_options = {
     "titles_only": False,
 }
 
-switcher_url = "https://intel.github.io/scikit-learn-intelex/versions.json"
+switcher_url = "/scikit-learn-intelex/versions.json"
 if bench_test:
     switcher_url = "/versions.json"
 

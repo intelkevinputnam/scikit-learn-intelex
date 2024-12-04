@@ -1,4 +1,5 @@
 import subprocess
+import os
 
 def get_version():
     major = ''
@@ -12,3 +13,5 @@ def get_version():
             minor = version[1]
 
     return major + "." + minor
+
+os.environ["DOC_VERSION"] = get_version()
