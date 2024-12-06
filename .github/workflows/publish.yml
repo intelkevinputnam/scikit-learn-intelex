@@ -38,6 +38,7 @@ jobs:
         mv -f ../output/$DOC_VERSION .
         mv ../output/versions.json .
         mv ../output/index.html .
+        rm -rf doc
         git config --global user.name "${GITHUB_ACTOR}"
         git config --global user.email "${GITHUB_ACTOR}@github.com"
         git add .

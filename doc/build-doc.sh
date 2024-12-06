@@ -29,20 +29,11 @@ rsync -a --exclude='doc/$SAMPLES_DIR/daal4py_data_science.ipynb' examples/notebo
 
 cd doc
 
-source ./set_version.sh #export DOC_VERSION=$(python3 -c "from get_doc_version import get_version; print(get_version())")
+source ./set_version.sh
 export SPHINXPROJ=scikit-learn-intelex
 export BUILDDIR=_build
 export SOURCEDIR=sources
 
-echo $DOC_VERSION
-echo $SPHINXPROJ
-echo $BUILDDIR
-echo $SOURCEDIR
-
 sphinx-build -b html $SOURCEDIR $BUILDDIR/$SPHINXPROJ/$DOC_VERSION
 cp versions.json $BUILDDIR/$SPHINXPROJ
 echo "<meta http-equiv=\"refresh\" content=\"0; URL='/$SPHINXPROJ/$DOC_VERSION/'\" / >" >> $BUILDDIR/$SPHINXPROJ/index.html
-
-# to build the docs locally, uncomment the following lines
-# cd doc
-# make html
