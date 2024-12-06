@@ -26,6 +26,7 @@ jobs:
         source set_version.sh
         chmod +x build-doc.sh
         ./build-doc.sh
+        mv _build/scikit-learn-intelex ../..
     - name: deploy docs
       run: |
         cd doc
@@ -35,9 +36,9 @@ jobs:
         git checkout -- doc/build-doc.sh
         git checkout gh-pages
         rm -rf $DOC_VERSION
-        mv -f doc/_build/scikit-learn-intelex/$DOC_VERSION .
-        mv doc/_build/scikit-learn-intelex/versions.json .
-        mv doc/_build/scikit-learn-intelex/index.html .
+        mv -f ../scikit-learn-intelex/$DOC_VERSION .
+        mv ../scikit-learn-intelex/versions.json .
+        mv ../scikit-learn-intelex/index.html .
         git config --global user.name "${GITHUB_ACTOR}"
         git config --global user.email "${GITHUB_ACTOR}@github.com"
         git add .
