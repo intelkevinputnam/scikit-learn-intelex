@@ -1,31 +1,30 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Utilizing daal4py in Data Science Workflows &mdash; Intel(R) Extension for Scikit-learn* 2025.0 documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
-      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
       <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
-      <link rel="stylesheet" type="text/css" href="../_static/tabs.css" />
-      <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
-      <link rel="stylesheet" type="text/css" href="../_static/nbsphinx-code-cells.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../_static/nbsphinx-code-cells.css?v=2aa19091" />
 
   
     <link rel="shortcut icon" href="../_static/favicons.png"/>
-      <script src="../_static/jquery.js"></script>
-      <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-      <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-      <script src="../_static/doctools.js"></script>
-      <script src="../_static/sphinx_highlight.js"></script>
-      <script src="../_static/clipboard.min.js"></script>
-      <script src="../_static/copybutton.js"></script>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=0e25812e"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=f281be69"></script>
       <script src="../_static/version_switcher.js"></script>
-      <script src="../_static/design-tabs.js"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
       <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
       <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
       <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
@@ -272,18 +271,14 @@
 <li class="toctree-l1"><a class="reference internal" href="../distributed-mode.html">Distributed Mode</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../non-scikit-algorithms.html">Non-Scikit-Learn Algorithms</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../non-scikit-algorithms.html#basicstatistics">BasicStatistics</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../non-scikit-algorithms.html#sklearnex.basic_statistics.BasicStatistics"><code class="docutils literal notranslate"><span class="pre">BasicStatistics</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../non-scikit-algorithms.html#sklearnex.basic_statistics.BasicStatistics.fit"><code class="docutils literal notranslate"><span class="pre">BasicStatistics.fit()</span></code></a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="../non-scikit-algorithms.html#sklearnex.basic_statistics.BasicStatistics"><code class="docutils literal notranslate"><span class="pre">BasicStatistics</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../non-scikit-algorithms.html#sklearnex.basic_statistics.BasicStatistics.fit"><code class="docutils literal notranslate"><span class="pre">BasicStatistics.fit()</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../non-scikit-algorithms.html#incrementalbasicstatistics">IncrementalBasicStatistics</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../non-scikit-algorithms.html#sklearnex.basic_statistics.IncrementalBasicStatistics"><code class="docutils literal notranslate"><span class="pre">IncrementalBasicStatistics</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../non-scikit-algorithms.html#sklearnex.basic_statistics.IncrementalBasicStatistics.fit"><code class="docutils literal notranslate"><span class="pre">IncrementalBasicStatistics.fit()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="../non-scikit-algorithms.html#sklearnex.basic_statistics.IncrementalBasicStatistics.partial_fit"><code class="docutils literal notranslate"><span class="pre">IncrementalBasicStatistics.partial_fit()</span></code></a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="../non-scikit-algorithms.html#sklearnex.basic_statistics.IncrementalBasicStatistics"><code class="docutils literal notranslate"><span class="pre">IncrementalBasicStatistics</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../non-scikit-algorithms.html#sklearnex.basic_statistics.IncrementalBasicStatistics.fit"><code class="docutils literal notranslate"><span class="pre">IncrementalBasicStatistics.fit()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../non-scikit-algorithms.html#sklearnex.basic_statistics.IncrementalBasicStatistics.partial_fit"><code class="docutils literal notranslate"><span class="pre">IncrementalBasicStatistics.partial_fit()</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../non-scikit-algorithms.html#incrementalempiricalcovariance">IncrementalEmpiricalCovariance</a><ul>
@@ -293,10 +288,10 @@
 <li class="toctree-l4"><a class="reference internal" href="../non-scikit-algorithms.html#sklearnex.covariance.IncrementalEmpiricalCovariance.n_samples_seen_"><code class="docutils literal notranslate"><span class="pre">IncrementalEmpiricalCovariance.n_samples_seen_</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="../non-scikit-algorithms.html#sklearnex.covariance.IncrementalEmpiricalCovariance.batch_size_"><code class="docutils literal notranslate"><span class="pre">IncrementalEmpiricalCovariance.batch_size_</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="../non-scikit-algorithms.html#sklearnex.covariance.IncrementalEmpiricalCovariance.n_features_in_"><code class="docutils literal notranslate"><span class="pre">IncrementalEmpiricalCovariance.n_features_in_</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="../non-scikit-algorithms.html#sklearnex.covariance.IncrementalEmpiricalCovariance.fit"><code class="docutils literal notranslate"><span class="pre">IncrementalEmpiricalCovariance.fit()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="../non-scikit-algorithms.html#sklearnex.covariance.IncrementalEmpiricalCovariance.partial_fit"><code class="docutils literal notranslate"><span class="pre">IncrementalEmpiricalCovariance.partial_fit()</span></code></a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../non-scikit-algorithms.html#sklearnex.covariance.IncrementalEmpiricalCovariance.fit"><code class="docutils literal notranslate"><span class="pre">IncrementalEmpiricalCovariance.fit()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../non-scikit-algorithms.html#sklearnex.covariance.IncrementalEmpiricalCovariance.partial_fit"><code class="docutils literal notranslate"><span class="pre">IncrementalEmpiricalCovariance.partial_fit()</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../non-scikit-algorithms.html#incrementallinearregression">IncrementalLinearRegression</a><ul>
@@ -307,11 +302,11 @@
 <li class="toctree-l4"><a class="reference internal" href="../non-scikit-algorithms.html#sklearnex.linear_model.IncrementalLinearRegression.n_samples_seen_"><code class="docutils literal notranslate"><span class="pre">IncrementalLinearRegression.n_samples_seen_</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="../non-scikit-algorithms.html#sklearnex.linear_model.IncrementalLinearRegression.batch_size_"><code class="docutils literal notranslate"><span class="pre">IncrementalLinearRegression.batch_size_</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="../non-scikit-algorithms.html#id0"><code class="docutils literal notranslate"><span class="pre">IncrementalLinearRegression.n_features_in_</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="../non-scikit-algorithms.html#sklearnex.linear_model.IncrementalLinearRegression.fit"><code class="docutils literal notranslate"><span class="pre">IncrementalLinearRegression.fit()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="../non-scikit-algorithms.html#sklearnex.linear_model.IncrementalLinearRegression.partial_fit"><code class="docutils literal notranslate"><span class="pre">IncrementalLinearRegression.partial_fit()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="../non-scikit-algorithms.html#sklearnex.linear_model.IncrementalLinearRegression.predict"><code class="docutils literal notranslate"><span class="pre">IncrementalLinearRegression.predict()</span></code></a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../non-scikit-algorithms.html#sklearnex.linear_model.IncrementalLinearRegression.fit"><code class="docutils literal notranslate"><span class="pre">IncrementalLinearRegression.fit()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../non-scikit-algorithms.html#sklearnex.linear_model.IncrementalLinearRegression.partial_fit"><code class="docutils literal notranslate"><span class="pre">IncrementalLinearRegression.partial_fit()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../non-scikit-algorithms.html#sklearnex.linear_model.IncrementalLinearRegression.predict"><code class="docutils literal notranslate"><span class="pre">IncrementalLinearRegression.predict()</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -396,7 +391,7 @@
            <div itemprop="articleBody">
              
   <section id="Utilizing-daal4py-in-Data-Science-Workflows">
-<h1>Utilizing daal4py in Data Science Workflows<a class="headerlink" href="#Utilizing-daal4py-in-Data-Science-Workflows" title="Permalink to this heading"></a></h1>
+<h1>Utilizing daal4py in Data Science Workflows<a class="headerlink" href="#Utilizing-daal4py-in-Data-Science-Workflows" title="Link to this heading"></a></h1>
 <p>The notebook below has been made to demonstrate daal4py in a data science context. It utilizes a Cycling Dataset for pyworkout-toolkit, and attempts to create a linear regression model from the 5 features collected for telemetry to predict the user’s Power output in the absence of a power meter.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
@@ -537,7 +532,7 @@
 <div class="line">- Heart Rate is a measure of the body’s workout strain, and would have a high possibly of influence. - Distance may have a loose correlation as it is highly route dependent, but might be possible. - Speed has possible correlations as it ties directly into power.</div>
 </div>
 <section id="Explore-and-visualize-some-of-the-data">
-<h2>Explore and visualize some of the data<a class="headerlink" href="#Explore-and-visualize-some-of-the-data" title="Permalink to this heading"></a></h2>
+<h2>Explore and visualize some of the data<a class="headerlink" href="#Explore-and-visualize-some-of-the-data" title="Link to this heading"></a></h2>
 <p>In general, we are trying to predict on the ‘power’ in Watts to see if we can generate a model that can predict one’s power output without the usage of a cycling power meter. Below are some basic scatterplots as we explore the data. Scatterplots are great for looking for patterns and correlation in the data itself. Below, we can see that cadence and speed are positively correlated.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
@@ -602,7 +597,7 @@
 </div>
 </section>
 <section id="Using-daal4py-for-Machine-Learning-tasks">
-<h2>Using daal4py for Machine Learning tasks<a class="headerlink" href="#Using-daal4py-for-Machine-Learning-tasks" title="Permalink to this heading"></a></h2>
+<h2>Using daal4py for Machine Learning tasks<a class="headerlink" href="#Using-daal4py-for-Machine-Learning-tasks" title="Link to this heading"></a></h2>
 <p>In the sections below, we will be using daal4py directly. After importing the model, we will arrange it in a separate independent and dependent dataframes, then use the daal4py’s training and prediction classes to generate a workable model.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
@@ -665,7 +660,7 @@
 </div>
 </section>
 <section id="Training-the-model">
-<h2>Training the model<a class="headerlink" href="#Training-the-model" title="Permalink to this heading"></a></h2>
+<h2>Training the model<a class="headerlink" href="#Training-the-model" title="Link to this heading"></a></h2>
 <p>Create the Linear Regression Model, and train the model with the data. We utilize daal4py’s linear_regression_training class to create the model, then call .compute() with the independent and dependent data as the parameters.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
@@ -694,7 +689,7 @@ Model has this number of features:  5
 </div>
 </section>
 <section id="Prediction-(inference)-with-the-trained-model">
-<h2>Prediction (inference) with the trained model<a class="headerlink" href="#Prediction-(inference)-with-the-trained-model" title="Permalink to this heading"></a></h2>
+<h2>Prediction (inference) with the trained model<a class="headerlink" href="#Prediction-(inference)-with-the-trained-model" title="Link to this heading"></a></h2>
 <p>Now that the model is trained, we can test it with the test part of the dataset. We drop the same features to match that of the trained model, and put it into daal4py’s linear_regression_prediction class.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
@@ -734,7 +729,7 @@ Model has this number of features:  5
 <p>The graph above shows the Orange (predicted) result over the Blue (original data). This data is notoriously sparse in features leading to a difficult to predict target!</p>
 </section>
 <section id="Model-properties">
-<h2>Model properties<a class="headerlink" href="#Model-properties" title="Permalink to this heading"></a></h2>
+<h2>Model properties<a class="headerlink" href="#Model-properties" title="Link to this heading"></a></h2>
 <p>Another aspect of the model is the trained model’s properties, which are explored below.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
@@ -759,7 +754,7 @@ Number of Features: 5
 </div>
 </section>
 <section id="Additional-metrics">
-<h2>Additional metrics<a class="headerlink" href="#Additional-metrics" title="Permalink to this heading"></a></h2>
+<h2>Additional metrics<a class="headerlink" href="#Additional-metrics" title="Link to this heading"></a></h2>
 <p>We can generate metrics on the independent data with daal4py’s low_order_moments() class.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
@@ -783,7 +778,7 @@ array([[1.90063975e+01, 3.75882355e+01, 4.98258371e+03, 2.41394741e+01,
 </div>
 </section>
 <section id="Migrating-the-trained-model-for-inference-on-external-systems">
-<h2>Migrating the trained model for inference on external systems<a class="headerlink" href="#Migrating-the-trained-model-for-inference-on-external-systems" title="Permalink to this heading"></a></h2>
+<h2>Migrating the trained model for inference on external systems<a class="headerlink" href="#Migrating-the-trained-model-for-inference-on-external-systems" title="Link to this heading"></a></h2>
 <p>Occasionally one may need to migrate the trained model to another system for inference only–this use case allows the training on a much more powerful machine with a larger dataset, and placing the trained model for inference-only on a smaller machine.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
@@ -843,7 +838,7 @@ array([[ 1.51003501e+01, -1.25075548e-01,  1.32249115e+00,
   <hr/>
 
   <div role="contentinfo">
-<jinja2.runtime.BlockReference object at 0x7f603c2a03d0>
+<jinja2.runtime.BlockReference object at 0x7f5038382e30>
 <a href=
     "https://www.intel.com/content/www/us/en/privacy/intel-cookie-notice.html" data-cookie-notice="true">
     Cookies
