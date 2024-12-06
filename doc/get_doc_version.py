@@ -13,5 +13,3 @@ def get_version():
             minor = version[1]
 
     return major + "." + minor
-
-os.environ["DOC_VERSION"] = get_version()

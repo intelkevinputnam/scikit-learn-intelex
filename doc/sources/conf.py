@@ -45,7 +45,7 @@ copyright = "Intel"
 author = "Intel"
 
 # The short X.Y version
-version = os.environ['DOC_VERSION']
+version = os.environ.get('DOC_VERSION','')
 # The full version, including alpha/beta/rc tags
 release = version
 
