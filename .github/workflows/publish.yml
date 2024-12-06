@@ -36,7 +36,7 @@ jobs:
         git checkout gh-pages
         rm -rf $DOC_VERSION
         mv -f doc/_build/scikit-learn-intelex/$DOC_VERSION .
-        mv ../versions.json .
+        mv doc/_build/scikit-learn-intelex/versions.json .
         mv doc/_build/scikit-learn-intelex/index.html .
         git config --global user.name "${GITHUB_ACTOR}"
         git config --global user.email "${GITHUB_ACTOR}@github.com"
