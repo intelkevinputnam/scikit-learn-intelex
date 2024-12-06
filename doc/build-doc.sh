@@ -29,7 +29,7 @@ rsync -a --exclude='doc/$SAMPLES_DIR/daal4py_data_science.ipynb' examples/notebo
 
 cd doc
 
-export DOC_VERSION=$(python3 -c "from get_doc_version import get_version; print(get_version())")
+source ./set_version.sh #export DOC_VERSION=$(python3 -c "from get_doc_version import get_version; print(get_version())")
 export SPHINXPROJ=scikit-learn-intelex
 export BUILDDIR=_build
 export SOURCEDIR=sources

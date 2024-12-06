@@ -23,7 +23,6 @@ jobs:
     - name: build docs
       run: |
         cd doc
-        source set_version.sh
         chmod +x build-doc.sh
         ./build-doc.sh
         mv _build/scikit-learn-intelex ../../output
