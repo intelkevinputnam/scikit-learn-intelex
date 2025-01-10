@@ -31,13 +31,13 @@ jobs:
         mv _build/scikit-learn-intelex ../../output
     - name: deploy docs
       run: |
+        . .venv/bin/activate
         cd doc
         source set_version.sh
         cd ..
         git fetch
         git checkout -- doc/build-doc.sh
         git checkout gh-pages
-        ls $DOC_VERSION
         rm -rf $DOC_VERSION
         mv -f ../output/$DOC_VERSION .
         mv ../output/versions.json .
