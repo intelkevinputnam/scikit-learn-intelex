@@ -43,6 +43,8 @@ jobs:
         mv ../output/versions.json .
         mv ../output/index.html .
         rm -rf doc
+        deactivate
+        rm -rf .venv
         git config --global user.name "${GITHUB_ACTOR}"
         git config --global user.email "${GITHUB_ACTOR}@github.com"
         git add .
