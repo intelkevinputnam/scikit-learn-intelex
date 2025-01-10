@@ -37,6 +37,7 @@ jobs:
         git fetch
         git checkout -- doc/build-doc.sh
         git checkout gh-pages
+        ls $DOC_VERSION
         rm -rf $DOC_VERSION
         mv -f ../output/$DOC_VERSION .
         mv ../output/versions.json .
