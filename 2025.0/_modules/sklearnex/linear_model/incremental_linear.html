@@ -1,28 +1,30 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" data-content_root="../../../">
+<html class="writer-html5" lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>sklearnex.linear_model.incremental_linear &mdash; Intel(R) Extension for Scikit-learn* 2025.0 documentation</title>
-      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=e59714d7" />
-      <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
-      <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=132153fd" />
-      <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/custom.css" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/tabs.css" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
 
   
     <link rel="shortcut icon" href="../../../_static/favicons.png"/>
-      <script src="../../../_static/jquery.js?v=5d32c60e"></script>
-      <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../../../_static/documentation_options.js?v=0e25812e"></script>
-      <script src="../../../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-      <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
-      <script src="../../../_static/copybutton.js?v=f281be69"></script>
-      <script src="../../../_static/version_switcher.js?v=107152b5"></script>
-      <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+      <script src="../../../_static/jquery.js"></script>
+      <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+      <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+      <script src="../../../_static/doctools.js"></script>
+      <script src="../../../_static/sphinx_highlight.js"></script>
+      <script src="../../../_static/clipboard.min.js"></script>
+      <script src="../../../_static/copybutton.js"></script>
+      <script src="../../../_static/version_switcher.js"></script>
+      <script src="../../../_static/tabs.js"></script>
+      <script src="../../../_static/design-tabs.js"></script>
       <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
@@ -267,14 +269,41 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../distributed-mode.html">Distributed Mode</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../non-scikit-algorithms.html">Non-Scikit-Learn Algorithms</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../../non-scikit-algorithms.html#basicstatistics">BasicStatistics</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.basic_statistics.BasicStatistics"><code class="docutils literal notranslate"><span class="pre">BasicStatistics</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.basic_statistics.BasicStatistics.fit"><code class="docutils literal notranslate"><span class="pre">BasicStatistics.fit()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.basic_statistics.BasicStatistics"><code class="docutils literal notranslate"><span class="pre">BasicStatistics</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.basic_statistics.BasicStatistics.min"><code class="docutils literal notranslate"><span class="pre">BasicStatistics.min</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.basic_statistics.BasicStatistics.max"><code class="docutils literal notranslate"><span class="pre">BasicStatistics.max</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.basic_statistics.BasicStatistics.sum"><code class="docutils literal notranslate"><span class="pre">BasicStatistics.sum</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.basic_statistics.BasicStatistics.mean"><code class="docutils literal notranslate"><span class="pre">BasicStatistics.mean</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.basic_statistics.BasicStatistics.variance"><code class="docutils literal notranslate"><span class="pre">BasicStatistics.variance</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.basic_statistics.BasicStatistics.variation"><code class="docutils literal notranslate"><span class="pre">BasicStatistics.variation</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.basic_statistics.BasicStatistics.sum_squares"><code class="docutils literal notranslate"><span class="pre">BasicStatistics.sum_squares</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.basic_statistics.BasicStatistics.standard_deviation"><code class="docutils literal notranslate"><span class="pre">BasicStatistics.standard_deviation</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.basic_statistics.BasicStatistics.sum_squares_centered"><code class="docutils literal notranslate"><span class="pre">BasicStatistics.sum_squares_centered</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.basic_statistics.BasicStatistics.second_order_raw_moment"><code class="docutils literal notranslate"><span class="pre">BasicStatistics.second_order_raw_moment</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.basic_statistics.BasicStatistics.fit"><code class="docutils literal notranslate"><span class="pre">BasicStatistics.fit()</span></code></a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../../non-scikit-algorithms.html#incrementalbasicstatistics">IncrementalBasicStatistics</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.basic_statistics.IncrementalBasicStatistics"><code class="docutils literal notranslate"><span class="pre">IncrementalBasicStatistics</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.basic_statistics.IncrementalBasicStatistics.fit"><code class="docutils literal notranslate"><span class="pre">IncrementalBasicStatistics.fit()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.basic_statistics.IncrementalBasicStatistics.partial_fit"><code class="docutils literal notranslate"><span class="pre">IncrementalBasicStatistics.partial_fit()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.basic_statistics.IncrementalBasicStatistics"><code class="docutils literal notranslate"><span class="pre">IncrementalBasicStatistics</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.basic_statistics.IncrementalBasicStatistics.min"><code class="docutils literal notranslate"><span class="pre">IncrementalBasicStatistics.min</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.basic_statistics.IncrementalBasicStatistics.max"><code class="docutils literal notranslate"><span class="pre">IncrementalBasicStatistics.max</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.basic_statistics.IncrementalBasicStatistics.sum"><code class="docutils literal notranslate"><span class="pre">IncrementalBasicStatistics.sum</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.basic_statistics.IncrementalBasicStatistics.mean"><code class="docutils literal notranslate"><span class="pre">IncrementalBasicStatistics.mean</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.basic_statistics.IncrementalBasicStatistics.variance"><code class="docutils literal notranslate"><span class="pre">IncrementalBasicStatistics.variance</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.basic_statistics.IncrementalBasicStatistics.variation"><code class="docutils literal notranslate"><span class="pre">IncrementalBasicStatistics.variation</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.basic_statistics.IncrementalBasicStatistics.sum_squares"><code class="docutils literal notranslate"><span class="pre">IncrementalBasicStatistics.sum_squares</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.basic_statistics.IncrementalBasicStatistics.standard_deviation"><code class="docutils literal notranslate"><span class="pre">IncrementalBasicStatistics.standard_deviation</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.basic_statistics.IncrementalBasicStatistics.sum_squares_centered"><code class="docutils literal notranslate"><span class="pre">IncrementalBasicStatistics.sum_squares_centered</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.basic_statistics.IncrementalBasicStatistics.second_order_raw_moment"><code class="docutils literal notranslate"><span class="pre">IncrementalBasicStatistics.second_order_raw_moment</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.basic_statistics.IncrementalBasicStatistics.n_samples_seen_"><code class="docutils literal notranslate"><span class="pre">IncrementalBasicStatistics.n_samples_seen_</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.basic_statistics.IncrementalBasicStatistics.batch_size_"><code class="docutils literal notranslate"><span class="pre">IncrementalBasicStatistics.batch_size_</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.basic_statistics.IncrementalBasicStatistics.n_features_in_"><code class="docutils literal notranslate"><span class="pre">IncrementalBasicStatistics.n_features_in_</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.basic_statistics.IncrementalBasicStatistics.fit"><code class="docutils literal notranslate"><span class="pre">IncrementalBasicStatistics.fit()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.basic_statistics.IncrementalBasicStatistics.partial_fit"><code class="docutils literal notranslate"><span class="pre">IncrementalBasicStatistics.partial_fit()</span></code></a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../../non-scikit-algorithms.html#incrementalempiricalcovariance">IncrementalEmpiricalCovariance</a><ul>
@@ -284,25 +313,24 @@
 <li class="toctree-l4"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.covariance.IncrementalEmpiricalCovariance.n_samples_seen_"><code class="docutils literal notranslate"><span class="pre">IncrementalEmpiricalCovariance.n_samples_seen_</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.covariance.IncrementalEmpiricalCovariance.batch_size_"><code class="docutils literal notranslate"><span class="pre">IncrementalEmpiricalCovariance.batch_size_</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.covariance.IncrementalEmpiricalCovariance.n_features_in_"><code class="docutils literal notranslate"><span class="pre">IncrementalEmpiricalCovariance.n_features_in_</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.covariance.IncrementalEmpiricalCovariance.fit"><code class="docutils literal notranslate"><span class="pre">IncrementalEmpiricalCovariance.fit()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.covariance.IncrementalEmpiricalCovariance.partial_fit"><code class="docutils literal notranslate"><span class="pre">IncrementalEmpiricalCovariance.partial_fit()</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.covariance.IncrementalEmpiricalCovariance.fit"><code class="docutils literal notranslate"><span class="pre">IncrementalEmpiricalCovariance.fit()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.covariance.IncrementalEmpiricalCovariance.partial_fit"><code class="docutils literal notranslate"><span class="pre">IncrementalEmpiricalCovariance.partial_fit()</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../../non-scikit-algorithms.html#incrementallinearregression">IncrementalLinearRegression</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.linear_model.IncrementalLinearRegression"><code class="docutils literal notranslate"><span class="pre">IncrementalLinearRegression</span></code></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.linear_model.IncrementalLinearRegression.coef_"><code class="docutils literal notranslate"><span class="pre">IncrementalLinearRegression.coef_</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.linear_model.IncrementalLinearRegression.intercept_"><code class="docutils literal notranslate"><span class="pre">IncrementalLinearRegression.intercept_</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.linear_model.IncrementalLinearRegression.n_features_in_"><code class="docutils literal notranslate"><span class="pre">IncrementalLinearRegression.n_features_in_</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.linear_model.IncrementalLinearRegression.n_samples_seen_"><code class="docutils literal notranslate"><span class="pre">IncrementalLinearRegression.n_samples_seen_</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.linear_model.IncrementalLinearRegression.batch_size_"><code class="docutils literal notranslate"><span class="pre">IncrementalLinearRegression.batch_size_</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../../non-scikit-algorithms.html#id0"><code class="docutils literal notranslate"><span class="pre">IncrementalLinearRegression.n_features_in_</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.linear_model.IncrementalLinearRegression.n_features_in_"><code class="docutils literal notranslate"><span class="pre">IncrementalLinearRegression.n_features_in_</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.linear_model.IncrementalLinearRegression.fit"><code class="docutils literal notranslate"><span class="pre">IncrementalLinearRegression.fit()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.linear_model.IncrementalLinearRegression.partial_fit"><code class="docutils literal notranslate"><span class="pre">IncrementalLinearRegression.partial_fit()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.linear_model.IncrementalLinearRegression.predict"><code class="docutils literal notranslate"><span class="pre">IncrementalLinearRegression.predict()</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.linear_model.IncrementalLinearRegression.fit"><code class="docutils literal notranslate"><span class="pre">IncrementalLinearRegression.fit()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.linear_model.IncrementalLinearRegression.partial_fit"><code class="docutils literal notranslate"><span class="pre">IncrementalLinearRegression.partial_fit()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../non-scikit-algorithms.html#sklearnex.linear_model.IncrementalLinearRegression.predict"><code class="docutils literal notranslate"><span class="pre">IncrementalLinearRegression.predict()</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -427,9 +455,7 @@
 <span class="kn">from</span> <span class="nn">.._utils</span> <span class="kn">import</span> <span class="n">PatchingConditionsChain</span><span class="p">,</span> <span class="n">register_hyperparameters</span>
 
 
-<div class="viewcode-block" id="IncrementalLinearRegression">
-<a class="viewcode-back" href="../../../non-scikit-algorithms.html#sklearnex.linear_model.IncrementalLinearRegression">[docs]</a>
-<span class="nd">@register_hyperparameters</span><span class="p">(</span>
+<div class="viewcode-block" id="IncrementalLinearRegression"><a class="viewcode-back" href="../../../non-scikit-algorithms.html#sklearnex.linear_model.IncrementalLinearRegression">[docs]</a><span class="nd">@register_hyperparameters</span><span class="p">(</span>
     <span class="p">{</span>
         <span class="s2">&quot;fit&quot;</span><span class="p">:</span> <span class="n">get_hyperparameters</span><span class="p">(</span><span class="s2">&quot;linear_regression&quot;</span><span class="p">,</span> <span class="s2">&quot;train&quot;</span><span class="p">),</span>
         <span class="s2">&quot;partial_fit&quot;</span><span class="p">:</span> <span class="n">get_hyperparameters</span><span class="p">(</span><span class="s2">&quot;linear_regression&quot;</span><span class="p">,</span> <span class="s2">&quot;train&quot;</span><span class="p">),</span>
@@ -440,8 +466,9 @@
 <span class="p">)</span>
 <span class="k">class</span> <span class="nc">IncrementalLinearRegression</span><span class="p">(</span><span class="n">MultiOutputMixin</span><span class="p">,</span> <span class="n">RegressorMixin</span><span class="p">,</span> <span class="n">BaseEstimator</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Incremental estimator for linear regression.</span>
-<span class="sd">    Allows to train linear regression if data are splitted into batches.</span>
+<span class="sd">    Trains a linear regression model, allows for computation if the data are split into</span>
+<span class="sd">    batches. The user can use the ``partial_fit`` method to provide a single batch of data or use the ``fit`` method to provide</span>
+<span class="sd">    the entire dataset.</span>
 
 <span class="sd">    Parameters</span>
 <span class="sd">    ----------</span>
@@ -459,8 +486,7 @@
 <span class="sd">    batch_size : int, default=None</span>
 <span class="sd">        The number of samples to use for each batch. Only used when calling</span>
 <span class="sd">        ``fit``. If ``batch_size`` is ``None``, then ``batch_size``</span>
-<span class="sd">        is inferred from the data and set to ``5 * n_features``, to provide a</span>
-<span class="sd">        balance between approximation accuracy and memory consumption.</span>
+<span class="sd">        is inferred from the data and set to ``5 * n_features``.</span>
 
 <span class="sd">    Attributes</span>
 <span class="sd">    ----------</span>
@@ -474,12 +500,9 @@
 <span class="sd">        Independent term in the linear model. Set to 0.0 if</span>
 <span class="sd">        `fit_intercept = False`.</span>
 
-<span class="sd">    n_features_in_ : int</span>
-<span class="sd">        Number of features seen during :term:`fit`.</span>
-
 <span class="sd">    n_samples_seen_ : int</span>
 <span class="sd">        The number of samples processed by the estimator. Will be reset on</span>
-<span class="sd">        new calls to fit, but increments across ``partial_fit`` calls.</span>
+<span class="sd">        new calls to ``fit``, but increments across ``partial_fit`` calls.</span>
 <span class="sd">        It should be not less than `n_features_in_` if `fit_intercept`</span>
 <span class="sd">        is False and not less than `n_features_in_` + 1 if `fit_intercept`</span>
 <span class="sd">        is True to obtain regression coefficients.</span>
@@ -488,8 +511,26 @@
 <span class="sd">        Inferred batch size from ``batch_size``.</span>
 
 <span class="sd">    n_features_in_ : int</span>
-<span class="sd">        Number of features seen during :term:`fit` `partial_fit`.</span>
+<span class="sd">        Number of features seen during ``fit`` or ``partial_fit``.</span>
 
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; import numpy as np</span>
+<span class="sd">    &gt;&gt;&gt; from sklearnex.linear_model import IncrementalLinearRegression</span>
+<span class="sd">    &gt;&gt;&gt; inclr = IncrementalLinearRegression(batch_size=2)</span>
+<span class="sd">    &gt;&gt;&gt; X = np.array([[1, 2], [3, 4], [5, 6], [7, 10]])</span>
+<span class="sd">    &gt;&gt;&gt; y = np.array([1.5, 3.5, 5.5, 8.5])</span>
+<span class="sd">    &gt;&gt;&gt; inclr.partial_fit(X[:2], y[:2])</span>
+<span class="sd">    &gt;&gt;&gt; inclr.partial_fit(X[2:], y[2:])</span>
+<span class="sd">    &gt;&gt;&gt; inclr.coef_</span>
+<span class="sd">    np.array([0.5., 0.5.])</span>
+<span class="sd">    &gt;&gt;&gt; inclr.intercept_</span>
+<span class="sd">    np.array(0.)</span>
+<span class="sd">    &gt;&gt;&gt; inclr.fit(X)</span>
+<span class="sd">    &gt;&gt;&gt; inclr.coef_</span>
+<span class="sd">    np.array([0.5., 0.5.])</span>
+<span class="sd">    &gt;&gt;&gt; inclr.intercept_</span>
+<span class="sd">    np.array(0.)</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
     <span class="n">_onedal_incremental_linear</span> <span class="o">=</span> <span class="nb">staticmethod</span><span class="p">(</span><span class="n">onedal_IncrementalLinearRegression</span><span class="p">)</span>
@@ -694,9 +735,7 @@
     <span class="n">coef_</span> <span class="o">=</span> <span class="nb">property</span><span class="p">(</span><span class="n">get_coef_</span><span class="p">,</span> <span class="n">set_coef_</span><span class="p">)</span>
     <span class="n">intercept_</span> <span class="o">=</span> <span class="nb">property</span><span class="p">(</span><span class="n">get_intercept_</span><span class="p">,</span> <span class="n">set_intercept_</span><span class="p">)</span>
 
-<div class="viewcode-block" id="IncrementalLinearRegression.partial_fit">
-<a class="viewcode-back" href="../../../non-scikit-algorithms.html#sklearnex.linear_model.IncrementalLinearRegression.partial_fit">[docs]</a>
-    <span class="k">def</span> <span class="nf">partial_fit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">check_input</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+<div class="viewcode-block" id="IncrementalLinearRegression.partial_fit"><a class="viewcode-back" href="../../../non-scikit-algorithms.html#sklearnex.linear_model.IncrementalLinearRegression.partial_fit">[docs]</a>    <span class="k">def</span> <span class="nf">partial_fit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">check_input</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Incremental fit linear model with X and y. All of X and y is</span>
 <span class="sd">        processed as a single batch.</span>
@@ -704,12 +743,12 @@
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
 <span class="sd">        X : array-like of shape (n_samples, n_features)</span>
-<span class="sd">            Training data, where `n_samples` is the number of samples and</span>
+<span class="sd">            Training data, where ``n_samples`` is the number of samples and</span>
 <span class="sd">            `n_features` is the number of features.</span>
 
 <span class="sd">        y : array-like of shape (n_samples,) or (n_samples, n_targets)</span>
-<span class="sd">            Target values, where `n_samples` is the number of samples and</span>
-<span class="sd">            `n_targets` is the number of targets.</span>
+<span class="sd">            Target values, where ``n_samples`` is the number of samples and</span>
+<span class="sd">            ``n_targets`` is the number of targets.</span>
 
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
@@ -730,25 +769,22 @@
         <span class="p">)</span>
         <span class="k">return</span> <span class="bp">self</span></div>
 
-
-<div class="viewcode-block" id="IncrementalLinearRegression.fit">
-<a class="viewcode-back" href="../../../non-scikit-algorithms.html#sklearnex.linear_model.IncrementalLinearRegression.fit">[docs]</a>
-    <span class="k">def</span> <span class="nf">fit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+<div class="viewcode-block" id="IncrementalLinearRegression.fit"><a class="viewcode-back" href="../../../non-scikit-algorithms.html#sklearnex.linear_model.IncrementalLinearRegression.fit">[docs]</a>    <span class="k">def</span> <span class="nf">fit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">        Fit the model with X and y, using minibatches of size batch_size.</span>
+<span class="sd">        Fit the model with X and y, using minibatches of size ``batch_size``.</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
 <span class="sd">        X : array-like of shape (n_samples, n_features)</span>
-<span class="sd">            Training data, where `n_samples` is the number of samples and</span>
-<span class="sd">            `n_features` is the number of features. It is necessary for</span>
-<span class="sd">            `n_samples` to be not less than `n_features` if `fit_intercept`</span>
-<span class="sd">            is False and not less than `n_features` + 1 if `fit_intercept`</span>
+<span class="sd">            Training data, where ``n_samples`` is the number of samples and</span>
+<span class="sd">            ``n_features`` is the number of features. It is necessary for</span>
+<span class="sd">            ``n_samples`` to be not less than ``n_features`` if ``fit_intercept``</span>
+<span class="sd">            is False and not less than ``n_features + 1`` if ``fit_intercept``</span>
 <span class="sd">            is True</span>
 
 <span class="sd">        y : array-like of shape (n_samples,) or (n_samples, n_targets)</span>
-<span class="sd">            Target values, where `n_samples` is the number of samples and</span>
-<span class="sd">            `n_targets` is the number of targets.</span>
+<span class="sd">            Target values, where ``n_samples`` is the number of samples and</span>
+<span class="sd">            ``n_targets`` is the number of targets.</span>
 
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
@@ -768,17 +804,19 @@
         <span class="p">)</span>
         <span class="k">return</span> <span class="bp">self</span></div>
 
-
-<div class="viewcode-block" id="IncrementalLinearRegression.predict">
-<a class="viewcode-back" href="../../../non-scikit-algorithms.html#sklearnex.linear_model.IncrementalLinearRegression.predict">[docs]</a>
-    <span class="nd">@wrap_output_data</span>
+<div class="viewcode-block" id="IncrementalLinearRegression.predict"><a class="viewcode-back" href="../../../non-scikit-algorithms.html#sklearnex.linear_model.IncrementalLinearRegression.predict">[docs]</a>    <span class="nd">@wrap_output_data</span>
     <span class="k">def</span> <span class="nf">predict</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Predict using the linear model.</span>
+
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
 <span class="sd">        X : array-like or sparse matrix, shape (n_samples, n_features)</span>
 <span class="sd">            Samples.</span>
+
+<span class="sd">        y : Ignored</span>
+<span class="sd">            Not used, present for API consistency by convention.</span>
+
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
 <span class="sd">        C : array, shape (n_samples, n_targets)</span>
@@ -800,7 +838,6 @@
             <span class="p">},</span>
             <span class="n">X</span><span class="p">,</span>
         <span class="p">)</span></div>
-
 
     <span class="nd">@wrap_output_data</span>
     <span class="k">def</span> <span class="nf">score</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">sample_weight</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
@@ -861,7 +898,6 @@
             <span class="n">y</span><span class="p">,</span>
             <span class="n">sample_weight</span><span class="o">=</span><span class="n">sample_weight</span><span class="p">,</span>
         <span class="p">)</span></div>
-
 </pre></div>
 
            </div>
@@ -871,7 +907,7 @@
   <hr/>
 
   <div role="contentinfo">
-<jinja2.runtime.BlockReference object at 0x7f49a7547a90>
+<jinja2.runtime.BlockReference object at 0x7efd09753d60>
 <a href=
     "https://www.intel.com/content/www/us/en/privacy/intel-cookie-notice.html" data-cookie-notice="true">
     Cookies
