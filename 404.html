@@ -21,6 +21,7 @@
         let para = document.createElement("p");
         para.innerHTML = "URL " + url + " doesn't exist.<br>"
         d.append(para);
+        console.log(available_versions);
         for (const item of available_versions){
           let new_p = document.createElement("p");
           new_p.innterHTML = '<b>' + item.name + ':</b> <a href="' + item.url + '">' + item.url + '</a>';
