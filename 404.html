@@ -8,9 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Page not found Scikit-learn-intelex </title>
     <script type="text/javascript">
-        fetch("versions.json").then(response => response.text()).then(respText=> load_versions(respText));
+        var available_versions = {};
+        fetch("versions.json").then(response => response.text()).then(respText=> available_versions = JSON.parse(json);));
         var url = window.location.href;
         console.log(url);
+        console.log(avialable_versions);
     </script>
 
 </head>
