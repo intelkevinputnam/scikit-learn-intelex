@@ -17,13 +17,18 @@
         function processRedirect(version_text){
           const available_versions = JSON.parse(version_text);
           var latest_version_path = '';
+          let new_div = document.createElement("div");
           for (const item of available_versions){
             if (item.name && item.name.includes("latest")){
               latest_version_path = item.url;
             }
+            let new_p = document.createElement("p");
+            new_p.innerHTML = '<b>' + item.name + ':</b> <a href="' + item.url + '">' + item.url + '</a>';
+            new_div.append(new_p);
           }
           const latest_path="/scikit-learn-intelex/latest/";
           var curr_path = window.location.pathname;
+          console.log(curr_path);
           if (curr_path.startswith(latest_path)){
             curr_path = curr_path.replace(latest_path,latest_version_path);
             window.location.href = curr.path;
@@ -33,12 +38,7 @@
           let para = document.createElement("p");
           para.innerHTML = "URL " + url + " doesn't exist.<br>"
           d.append(para);
-          console.log(available_versions);
-          for (const item of available_versions){
-            let new_p = document.createElement("p");
-            new_p.innerHTML = '<b>' + item.name + ':</b> <a href="' + item.url + '">' + item.url + '</a>';
-            d.append(new_p);
-          }
+          d.append(new_div);
         }
       fetch("/scikit-learn-intelex/versions.json").then(response => response.text()).then(respText=> processRedirect(respText));
     </script>
