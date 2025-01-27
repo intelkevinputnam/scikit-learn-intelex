@@ -31,6 +31,7 @@
           if (curr_path.startsWith(latest_path)){
             curr_path = curr_path.replace(latest_path,latest_version_path);
             window.location.href = curr_path;
+            return;
           }
           var url = window.location.href;
           const d = document.getElementById("404message");
