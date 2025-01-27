@@ -11,13 +11,22 @@
         var available_versions = {};
         fetch("/scikit-learn-intelex/versions.json").then(response => response.text()).then(respText=> available_versions = JSON.parse(respText));
         var url = window.location.href;
-        console.log(url);
-        console.log(available_versions);
+        const d = document.getElementById("404message");
+        let para = document.createElement("p");
+        para.innerHTML = "URL " + url + " doesn't exist.<br>"
+        d.append(para);
+        for (const item of available_versions){
+          let new_p = document.createElement("p");
+          new_p.innterHTML = '<b>' + item.name + ':</b> <a href="' + item.url + '">' + item.url + '</a>';
+          d.append(new_p);
+        }
+        
+        
     </script>
 
 </head>
 
 <body class="wy-body-for-nav"> 
-
+<div id="404message"></div>
 </body>
 </html>
