@@ -14,20 +14,20 @@
 <div id="404message"></div>
 </body>
     <script type="text/javascript">
-        var available_versions = {};
-        fetch("/scikit-learn-intelex/versions.json").then(response => response.text()).then(respText=> available_versions = JSON.parse(respText));
-        var url = window.location.href;
-        const d = document.getElementById("404message");
-        let para = document.createElement("p");
-        para.innerHTML = "URL " + url + " doesn't exist.<br>"
-        d.append(para);
-        console.log(available_versions);
-        for (const item of available_versions){
-          let new_p = document.createElement("p");
-          new_p.innterHTML = '<b>' + item.name + ':</b> <a href="' + item.url + '">' + item.url + '</a>';
-          d.append(new_p);
+        function processRedirect(version_text){
+          available_versions = JSON.parse(version_ext)
+          var url = window.location.href;
+          const d = document.getElementById("404message");
+          let para = document.createElement("p");
+          para.innerHTML = "URL " + url + " doesn't exist.<br>"
+          d.append(para);
+          console.log(available_versions);
+          for (const item of available_versions){
+            let new_p = document.createElement("p");
+            new_p.innterHTML = '<b>' + item.name + ':</b> <a href="' + item.url + '">' + item.url + '</a>';
+            d.append(new_p);
+          }
         }
-        
-        
+      fetch("/scikit-learn-intelex/versions.json").then(response => response.text()).then(respText=> processRedirect(respText));
     </script>
 </html>
