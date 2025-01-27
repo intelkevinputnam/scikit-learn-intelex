@@ -9,7 +9,7 @@
   <title>Page not found Scikit-learn-intelex </title>
     <script type="text/javascript">
         var available_versions = {};
-        fetch("versions.json").then(response => response.text()).then(respText=> available_versions = JSON.parse(json);));
+        fetch("versions.json").then(response => response.text()).then(respText=> available_versions = JSON.parse(respText));
         var url = window.location.href;
         console.log(url);
         console.log(avialable_versions);
