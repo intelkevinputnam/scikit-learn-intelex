@@ -15,7 +15,17 @@
 </body>
     <script type="text/javascript">
         function processRedirect(version_text){
-          available_versions = JSON.parse(version_text)
+          const available_versions = JSON.parse(version_text);
+          var latest_version_path = '';
+          for (const item of available_versions){
+            if (item.includes("latest")){
+              latest_version_path = item.url;
+          }
+          const latest_path="/scikit-learn-intelex/latest/";
+          var curr_path = window.location.pathname;
+          if (curr_path.startswith(latest_path)){
+            curr_path = curr_path.replace(latest_path,latest_version_path);
+            window.location.href = curr.path;
           var url = window.location.href;
           const d = document.getElementById("404message");
           let para = document.createElement("p");
