@@ -18,7 +18,7 @@
           const available_versions = JSON.parse(version_text);
           var latest_version_path = '';
           for (const item of available_versions){
-            if (item.name.includes("latest")){
+            if (item.name && item.name.includes("latest")){
               latest_version_path = item.url;
             }
           }
